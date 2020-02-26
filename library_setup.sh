@@ -43,4 +43,13 @@ sudo apt-get install libmariadb-client-lgpl-dev
 
 ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/'
 
+# Error installing rgeos & Morpho packages in R
+sudo apt install apt-file
+sudo apt update
+apt-file search geos-config #for looking up files in the repo
+sudo apt install libgeos-dev
+
+# Error installing rgdal package in R
+sudo apt install libgdal-dev
+
 
