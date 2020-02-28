@@ -1,7 +1,5 @@
 #!/bin/bash -x
 
-export PATH=$PATH:~/
-
 # Error installing rgeos & Morpho packages in R
 sudo apt install apt-file
 sudo apt update
